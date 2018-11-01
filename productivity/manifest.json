@@ -1,0 +1,27 @@
+{
+
+  //Required
+  "name": "Productivity",
+  "version": "1.0",
+  "manifest_version": 2,
+  //Recommended
+  "description": "For productivity",
+
+  "permissions": [
+    "tabs",
+	"storage",
+	"notifications"
+  ],
+  //Type of action : Browser,Page, or none
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action":{
+    "default_icon": "icon_productivity.png",
+    "default_popup": "popup.html",
+    "default_title": "Be productive"
+  }
+  //intent of app, what you will access from user
+
+}
