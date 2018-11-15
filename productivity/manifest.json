@@ -10,12 +10,17 @@
   "permissions": [
     "tabs",
 	"storage",
-	"notifications"
+	"notifications",
+	"bookmarks"
+	
   ],
   //Type of action : Browser,Page, or none
   "background": {
     "scripts": ["background.js"],
     "persistent": false
+  },
+  "chrome_url_overrides": {
+    "newtab" : "newtab.html"
   },
   "browser_action":{
     "default_icon": "icon_productivity.png",
