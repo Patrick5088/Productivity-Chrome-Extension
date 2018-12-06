@@ -8,6 +8,7 @@
   "description": "For productivity",
 
   "permissions": [
+	"activeTab",
     "tabs",
 	"storage",
 	"notifications",
@@ -26,7 +27,14 @@
     "default_icon": "icon_productivity.png",
     "default_popup": "popup.html",
     "default_title": "Be productive"
-  }
+  },
+   "content_scripts": [
+   {
+     "matches": ["<all_urls>"],
+     "js": ["content_script.js"]
+   }
+ ]
+
   //intent of app, what you will access from user
 
 }
